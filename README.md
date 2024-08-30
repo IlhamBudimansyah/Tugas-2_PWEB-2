@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/864f530a-9678-4e71-85ad-20140919c074)# Tugas 2 Praktikum Pemrograman Web
+# Tugas 2 Praktikum Pemrograman Web
 ## Tentang saya 
 Nama : Ilham Budimansyah \
 Kelas : TI-2A \
