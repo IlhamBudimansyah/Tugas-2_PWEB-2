@@ -4,8 +4,6 @@ Nama : Ilham Budimansyah \
 Kelas : TI-2A \
 NIM : 230302013
 -
-## Overview
-SIWALI JKB adalah sistem manajemen bimbingan akademik yang dirancang untuk mempermudah pengelolaan kinerja mahasiswa, konseling, dan data akademik lainnya di institusi pendidikan tinggi.
 ## Task
 1. **membuat view berbasis OOP PHP dengan menerima data dari mySQL database (tabel reports, gpas dan gpa_details)**
 2. **menggunakan __construct sebagai link untuk menghubungan ke database**
