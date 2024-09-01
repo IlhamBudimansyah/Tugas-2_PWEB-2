@@ -65,14 +65,14 @@ SIWALI JKB adalah sistem manajemen bimbingan akademik yang dirancang untuk mempe
 ![image](https://github.com/user-attachments/assets/10762b63-e095-497b-8f74-9e884e8f2286)
 ## Tampilan Program
 + menampilkan seluruh isi tabel gpas
-![image](https://github.com/user-attachments/assets/7d42cb8a-2928-4f66-bc7f-f5cb235aab12)
+![image](https://github.com/user-attachments/assets/fa41da9c-0416-433d-ab40-c7313e8fad86)
 + menampilkan seluruh isi tabel gpa_details
-![image](https://github.com/user-attachments/assets/70dec389-46b6-40fb-af08-078265f0eddb)
+![image](https://github.com/user-attachments/assets/15a5883d-cec7-4303-9986-77ae4f5bcc10)
 +  menampilkan seluruh isi tabel reports
-![image](https://github.com/user-attachments/assets/243c5f77-675f-4175-ad6f-ab7afece8691)
+![image](https://github.com/user-attachments/assets/9920dec0-b73b-4d08-80a7-b1f33cba354b)
 +  menampilkan isi tabel gpas yang memiliki ID GPA sama dengan 1
-![image](https://github.com/user-attachments/assets/d47ceaad-4212-44fc-8588-6534737d98b1)
+![image](https://github.com/user-attachments/assets/99084304-7c76-4fd5-9770-8c418c4590b2)
 + menampilkan isi tabel gpa_details yang memiliki ID GPA DETAILS sama dengan 1
-![image](https://github.com/user-attachments/assets/227005e5-7566-4116-a9cc-a51554738b27)
+![image](https://github.com/user-attachments/assets/37d8b1ab-2324-4f91-8c7f-b187c7ce4133)
 + menampilkan isi tabel reports yang status-nya Approved
-![image](https://github.com/user-attachments/assets/acb17350-ff2b-4a50-a7ac-8a6ac9b9f5e4)
+![image](https://github.com/user-attachments/assets/01bac6fc-791f-4f75-b69a-e0ca101e60b3)
