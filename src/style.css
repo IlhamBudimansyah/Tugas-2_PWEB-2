@@ -1,0 +1,19 @@
+ h5.student-view {
+   background-color: #f8f9fa;
+   border: 1px solid #dee2e6;
+   padding: 10px;
+   border-radius: 5px;
+   margin-bottom: 20px;
+}
+h5.student-view a {
+   color: #007bff;
+   text-decoration: none;
+}
+h5.student-view a:hover {
+   text-decoration: underline;
+}
+
+.table th {
+   background-color: #007bff;
+   color: white;
+}

@@ -18,12 +18,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
           crossorigin="anonymous">
-          <style>
-            .table th {
-            background-color: #007bff;
-            color: white;
-        }
-          </style>
+          
+          <link rel="stylesheet" href="./src/style.css">
 </head>
 
 <?php require_once "./src/partials/navbar.php"; ?> 
@@ -33,6 +29,8 @@
 
 <!-- Membuat tabel dengan class Bootstrap 'table' untuk menampilkan data laporan -->
 <div class="m-5">
+
+<h5 class="student-view">Lihat sebagai <a href="reports_student.php">student/mahasiswa</a></h5> <!-- Menyediakan link untuk melihat laporan sebagai mahasiswa -->
 <table class="table" id="Table">
   <thead>
     <tr>
@@ -77,7 +75,6 @@
 </div>
 
 
-<h4>Lihat sebagai <a href="reports_student.php">student/mahasiswa</a></h4> <!-- Menyediakan link untuk melihat laporan sebagai mahasiswa -->
 
 <!-- Menyertakan JavaScript Bootstrap 5.3.3 dari CDN untuk mendukung interaktivitas halaman -->
 <?php

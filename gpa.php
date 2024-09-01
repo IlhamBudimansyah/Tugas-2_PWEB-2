@@ -18,21 +18,18 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
           crossorigin="anonymous">
-          <style>
-            .table th {
-            background-color: #007bff;
-            color: white;
-        }
-          </style>
+          
+<link rel="stylesheet" href="./src/style.css">
 </head>
 
 <?php require_once "./src/partials/navbar.php"; ?> 
 <!-- Memasukkan file PHP eksternal 'navbar.php' untuk menampilkan navigasi di halaman -->
-
 <body>
 
 <!-- Membuat tabel dengan class Bootstrap 'table' untuk menampilkan data GPA -->
 <div class="m-5">
+
+<h5 class="student-view">Lihat sebagai <a href="gpa_student.php">student/mahasiswa</a></h5>
 <table class="table" id="Table">
   <thead>
     <tr>
@@ -61,7 +58,6 @@
 
 
 <!-- Menyediakan tautan untuk melihat data sebagai student/mahasiswa, mengarahkan ke gpa_student.php -->
-<h4>Lihat sebagai <a href="gpa_student.php">student/mahasiswa</a></h4>
 
 <!-- Menyertakan JavaScript Bootstrap 5.3.3 dari CDN untuk mendukung interaktivitas halaman -->
 <?php

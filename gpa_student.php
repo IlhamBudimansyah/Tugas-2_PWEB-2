@@ -18,12 +18,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
           crossorigin="anonymous">
-   <style>
-    .table th {
-            background-color: #007bff;
-            color: white;
-        }
-   </style> 
+   <link rel="stylesheet" href="./src/style.css"> 
 </head>
 
 <?php require_once "./src/partials/navbar.php"; ?> 
