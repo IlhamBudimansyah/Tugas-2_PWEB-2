@@ -1,6 +1,6 @@
 <?php
     // Menyertakan file koneksi.php untuk melakukan koneksi ke database
-    require_once "koneksi.php";
+    require_once "./src/config/koneksi.php";
     
     // Membuat objek dari kelas GpasStudent dan memanggil metode tampilData untuk mengambil data GPA mahasiswa dari database
     $gpa_student = new GpasStudent();
@@ -18,15 +18,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
           crossorigin="anonymous">
+   <style>
+    .table th {
+            background-color: #007bff;
+            color: white;
+        }
+   </style> 
 </head>
 
-<?php require_once "navbar.php"; ?> 
+<?php require_once "./src/partials/navbar.php"; ?> 
 <!-- Menyertakan file PHP eksternal 'navbar.php' untuk menampilkan navigasi di halaman -->
 
 <body>
 
 <!-- Membuat tabel dengan class Bootstrap 'table' untuk menampilkan data GPA mahasiswa -->
-<table class="table">
+<div class="m-5">
+<table class="table" id="Table">
   <thead>
     <tr>
       <th scope="col">No</th> <!-- Kolom untuk nomor urut -->
@@ -37,20 +44,20 @@
 <tbody>
   <?php 
     $no = 1; // Inisialisasi variabel untuk nomor urut
-    foreach($hasil as $row) { // Loop melalui setiap baris data GPA yang didapatkan dari database
+    foreach($hasil as $row) : // Loop melalui setiap baris data GPA yang didapatkan dari database
   ?>
     <tr>
         <td><?=$no++ ?></td> <!-- Menampilkan nomor urut, kemudian menaikkan nilai $no untuk baris berikutnya -->
         <td><?=$row['id_student'] ?></td> <!-- Menampilkan ID Mahasiswa -->
         <td><?=$row['cumulative_gpa'] ?></td> <!-- Menampilkan GPA Kumulatif -->
     </tr>
-    <?php } ?> <!-- Mengakhiri loop foreach -->
+  <?php endforeach ?> <!-- Mengakhiri loop foreach -->
 </tbody>
-</table>
+</table> 
+</div>
+
 
 <!-- Menyertakan JavaScript Bootstrap 5.3.3 dari CDN untuk mendukung interaktivitas halaman -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
-        crossorigin="anonymous"></script>
-</body>
-</html>
+<?php
+require_once './src/partials/footer.php';
+?>

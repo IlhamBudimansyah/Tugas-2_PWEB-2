@@ -11,7 +11,7 @@
           crossorigin="anonymous"> <!-- Atribut integrity dan crossorigin untuk memastikan file yang diunduh sesuai dengan sumber yang dipercaya -->
 </head>
 
-<?php require_once "navbar.php" ?> 
+<?php require_once "./src/partials/navbar.php" ?> 
 <!-- Menyertakan file PHP eksternal 'navbar.php'. Jika file ini tidak ditemukan, skrip akan dihentikan. 
 Ini berguna untuk menyertakan elemen navigasi yang konsisten di seluruh halaman -->
 

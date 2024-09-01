@@ -1,6 +1,6 @@
 <?php
     // Memanggil file koneksi.php yang berisi pengaturan koneksi ke database
-    require_once "koneksi.php";
+    require_once "./src/config/koneksi.php";
     
     // Membuat objek dari kelas Gpas dan memanggil metode tampilData untuk mengambil data GPA dari database
     $gpa = new Gpas();
@@ -18,15 +18,22 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
           integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
           crossorigin="anonymous">
+          <style>
+            .table th {
+            background-color: #007bff;
+            color: white;
+        }
+          </style>
 </head>
 
-<?php require_once "navbar.php"; ?> 
+<?php require_once "./src/partials/navbar.php"; ?> 
 <!-- Memasukkan file PHP eksternal 'navbar.php' untuk menampilkan navigasi di halaman -->
 
 <body>
 
 <!-- Membuat tabel dengan class Bootstrap 'table' untuk menampilkan data GPA -->
-<table class="table">
+<div class="m-5">
+<table class="table" id="Table">
   <thead>
     <tr>
       <th scope="col">No</th> <!-- Kolom untuk nomor urut -->
@@ -50,12 +57,14 @@
 </tbody>
 </table>
 
+</div>
+
+
 <!-- Menyediakan tautan untuk melihat data sebagai student/mahasiswa, mengarahkan ke gpa_student.php -->
 <h4>Lihat sebagai <a href="gpa_student.php">student/mahasiswa</a></h4>
 
 <!-- Menyertakan JavaScript Bootstrap 5.3.3 dari CDN untuk mendukung interaktivitas halaman -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
-        crossorigin="anonymous"></script>
-</body>
-</html>
+<?php
+
+require_once './src/partials/footer.php';
+?>
